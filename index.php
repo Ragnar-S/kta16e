@@ -1,11 +1,12 @@
 
 <meta charset = "utf-8">
 
+<script type="text/javascript" src="script.js"></script>
+
 <?php
 require 'components.php';
 require 'function.php';
 $name = "Tarmo";
-
 // üherealine kommentaar
 
 /*
@@ -16,7 +17,8 @@ mitmel real
 
 // tagasi algusesse
 home();
-menu($menu_begin, $menu_arr,$menu_end);
+menu($menu_begin, $menu_arr, $menu_end);
+echo "<div></div>";
 
 //näitame praegust aega ja anname soovitusi
 
@@ -27,5 +29,9 @@ echo '<b>$name esimene PHPs kirjutatud lause!</b><br>';
 echo "Nüüd vaatame täpitähti<br>";
 
 GetVisitorIp();
+
+echo "<br>";
+
+counter();
 
 ?>
